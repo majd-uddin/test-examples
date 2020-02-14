@@ -1,0 +1,15 @@
+.component-numbutton {
+    display: inline-flex;
+    width: 10%;
+    flex: 1 0 auto;
+  }
+
+.component-numbutton button {
+    background-color: #3ca32e;
+    border: 0;
+    font-size: 1.5rem;
+    color: beige;
+    margin: 0 1px 0 0;
+    flex: 1 0 auto;
+    padding: 0;
+    }
