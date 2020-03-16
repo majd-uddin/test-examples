@@ -3,10 +3,6 @@ import "./Button.css";
 
 export default class NumButton extends React.Component {
 
-  handleClick = () => {
-    this.props.clickHandler(this.props.num);
-  };
-
   render() {
     const className = [
       "component-numbutton",
@@ -14,7 +10,7 @@ export default class NumButton extends React.Component {
 
     return (
       <div className={className.join(" ").trim()}>
-        <button onClick={this.handleClick}>{this.props.num}</button>
+        <button onClick={() => this.props.handleClick(this.props.num)}>{this.props.num}</button>
       </div>
     );
   }
