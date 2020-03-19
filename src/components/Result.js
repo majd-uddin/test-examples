@@ -5,7 +5,8 @@ export default class Results extends React.Component {
     render() {
         return (
         <div className="results-main">
-            <div>{this.props.val}</div>
+            <div className="small">{this.props.smallVal}</div>
+            <div className="big">{this.props.bigVal}</div>
         </div>
         );
     }
